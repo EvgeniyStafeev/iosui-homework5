@@ -99,15 +99,12 @@ class LogInViewController: UIViewController {
         self.navigationController?.pushViewController(profileVC, animated: false)
     }
     
-    // MARK: UIScrollView keyboard
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         notificationCenter.addObserver(self, selector: #selector(keyboardShow), name: UIResponder.keyboardWillShowNotification, object: nil) // - клавиатура показана на экране
         notificationCenter.addObserver(self, selector: #selector(keyboardHide), name: UIResponder.keyboardWillHideNotification, object: nil) // - клавиатура спрятана
     }
     
-    // отписываемся от viewWillAppear
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         notificationCenter.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
@@ -143,7 +140,6 @@ class LogInViewController: UIViewController {
             contentView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
             contentView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
             contentView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
-            /// Обязательно выставить ширину contentView !!!
             contentView.widthAnchor.constraint(equalTo: scrollView.widthAnchor)
         ])
 
@@ -152,35 +148,29 @@ class LogInViewController: UIViewController {
 
         NSLayoutConstraint.activate([
             
-            // LogoImage
             logoImage.centerXAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.centerXAnchor),
             logoImage.topAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.topAnchor, constant: 120),
             logoImage.heightAnchor.constraint(equalToConstant: 100),
             logoImage.widthAnchor.constraint(equalToConstant: 100),
             
-            // StackView
             stackView.topAnchor.constraint(equalTo: logoImage.bottomAnchor, constant: 120),
             stackView.leadingAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.leadingAnchor, constant: 16),
             stackView.trailingAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.trailingAnchor, constant: -16),
             stackView.heightAnchor.constraint(equalToConstant: 100),
             
-            // LogInText
             userLoginTextField.heightAnchor.constraint(equalToConstant: 50),
-            // PasswordText
             userPasswordTextField.heightAnchor.constraint(equalToConstant: 50),
                  
-            // LogInButton
             logInButton.leadingAnchor.constraint(equalTo: stackView.leadingAnchor),
             logInButton.trailingAnchor.constraint(equalTo: stackView.trailingAnchor),
             logInButton.topAnchor.constraint(equalTo: stackView.bottomAnchor, constant: 16),
             logInButton.heightAnchor.constraint(equalToConstant: 50),
-                 /// Обязательно закрепить нижний элемент к низу contentView !!!
             logInButton.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
         ])
     }
 
 }
-// MARK: - UITextFieldDelegate
+
 extension LogInViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         view.endEditing(true)

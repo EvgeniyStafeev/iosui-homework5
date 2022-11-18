@@ -18,6 +18,8 @@
 		DF3F8EEE29117FB4008B9755 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3F8EED29117FB4008B9755 /* Post.swift */; };
 		DF3F8EF129118211008B9755 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3F8EF029118211008B9755 /* ProfileHeaderView.swift */; };
 		DF3F8EF329118224008B9755 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3F8EF229118224008B9755 /* ProfileViewController.swift */; };
+		DFAAA5FD292789090090B5C9 /* PostVK.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAAA5FC292789090090B5C9 /* PostVK.swift */; };
+		DFAAA5FF29278A290090B5C9 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAAA5FE29278A290090B5C9 /* PostTableViewCell.swift */; };
 		DFDE2A20292347B200F540B6 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDE2A1F292347B200F540B6 /* TextField.swift */; };
 		DFDE2A222923548300F540B6 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDE2A212923548300F540B6 /* LogInViewController.swift */; };
 /* End PBXBuildFile section */
@@ -37,6 +39,8 @@
 		DF3F8EED29117FB4008B9755 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		DF3F8EF029118211008B9755 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		DF3F8EF229118224008B9755 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		DFAAA5FC292789090090B5C9 /* PostVK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVK.swift; sourceTree = "<group>"; };
+		DFAAA5FE29278A290090B5C9 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		DFDE2A1F292347B200F540B6 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		DFDE2A212923548300F540B6 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +96,8 @@
 			children = (
 				DFDE2A1F292347B200F540B6 /* TextField.swift */,
 				DF3F8EF029118211008B9755 /* ProfileHeaderView.swift */,
+				DFAAA5FE29278A290090B5C9 /* PostTableViewCell.swift */,
+				DFAAA5FC292789090090B5C9 /* PostVK.swift */,
 				DFDE2A212923548300F540B6 /* LogInViewController.swift */,
 				DF3F8EF229118224008B9755 /* ProfileViewController.swift */,
 			);
@@ -171,8 +177,10 @@
 				DF3F8EE829117F65008B9755 /* PostViewController.swift in Sources */,
 				DFDE2A20292347B200F540B6 /* TextField.swift in Sources */,
 				DF3F8ED429117EB0008B9755 /* ViewController.swift in Sources */,
+				DFAAA5FD292789090090B5C9 /* PostVK.swift in Sources */,
 				DF3F8ED029117EB0008B9755 /* AppDelegate.swift in Sources */,
 				DF3F8EE629117F4C008B9755 /* FeedViewController.swift in Sources */,
+				DFAAA5FF29278A290090B5C9 /* PostTableViewCell.swift in Sources */,
 				DF3F8EE429117F2C008B9755 /* MainTabBarController.swift in Sources */,
 				DF3F8EF329118224008B9755 /* ProfileViewController.swift in Sources */,
 				DF3F8EEE29117FB4008B9755 /* Post.swift in Sources */,
